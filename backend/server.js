@@ -13,7 +13,7 @@ app.use(express.urlencoded({extended:false}))
 
 app.use('/api/projects',require("./routes/projectRoutes"))
 app.use('/api/admin',require("./routes/adminRoutes"))
-
+app.use('/api',require('../backend/routes/contactUsRoute'))
 app.use(errorHandler)
 
 app.listen(port,()=>console.log(`server started on port ${port} `))
