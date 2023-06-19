@@ -25,6 +25,7 @@ const createProject = asyncHandler(async (req, res) => {
   const project = await Project.create({
     name: req.body.name,
     desc: req.body.desc,
+    techStack:req.body.techStack,
     img: req.file.path,
     repoLink: req.body.repoLink,
     demoLink: req.body.demoLink,

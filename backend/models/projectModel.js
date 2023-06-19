@@ -9,6 +9,10 @@ const projectSchema = mongoose.Schema(
     desc: {
       type: String,
     },
+    techStack:{
+      type: String,
+      required: [true, "Please add a tech stack"]
+    },
     img: {
       type: String,
       required: [true, "Please add an image"],
